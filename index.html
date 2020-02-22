@@ -2,10 +2,15 @@
 <html> 
     <head>
         <title> Bowling Score Card</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        
+        <script src="src/game.js"></script>
         <h1> Bowling Score Card</h1> 
         <h3> Add score</h3>
+        <h3> Current score <span id="scores"></h3>
+        <h3> Current frames <span id="frames"></h3>
         <form id="bowl" >
             <input type="number" id="scoreValue">
             <input type="submit" value="go">
@@ -13,10 +18,23 @@
         <script src="jquery.js"></script>
         <script>
 
-            $( "#bowl" ).submit(function (event) {  
-                console.log($("scoreValue"))
-                event.preventDefault();
+            $(document).ready(function(){
+                var game = new Game();
+
+                $( "#bowl" ).submit(function (event) {  
+                    event.preventDefault();
+                    game.bowl($("#scoreValue").val())
+                    $('#scores').text(game.scores);
+                    $('#frames').text(game.frames);
+               });
+
+               
+            
             });
         </script>
+
+
     </body>
 </html>
+
+        
