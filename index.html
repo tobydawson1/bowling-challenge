@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> Bowling Score Card</title>
+    </head>
+    <body>
+        <h1> Bowling Score Card</h1> 
+        <h3> Add score</h3>
+        <form id="bowl" >
+            <input type="number" id="scoreValue">
+            <input type="submit" value="go">
+          </form>
+        <script src="jquery.js"></script>
+        <script>
+
+            $( "#bowl" ).submit(function (event) {  
+                console.log($("scoreValue"))
+                event.preventDefault();
+            });
+        </script>
+    </body>
+</html>
