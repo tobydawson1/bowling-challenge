@@ -8,9 +8,21 @@
         
         <script src="src/game.js"></script>
         <h1> Bowling Score Card</h1> 
+        <h3> Current score: <span id="scores"></h3>
+        <h3> First Frame: <span id="frameOne"></h3>
+        <h3> Second Frame: <span id="frameTwo"></h3>
+        <h3> Third Frame: <span id="frameThree"></h3>
+        <h3> Fourth Frame: <span id="frameFour"></h3>
+        <h3> Fifth Frame: <span id="frameFive"></h3>
+        <h3> Sixth Frame: <span id="frameSix"></h3>
+        <h3> Seventh Frame: <span id="frameSeven"></h3>
+        <h3> Eigth Frame: <span id="frameEight"></h3>
+        <h3> Ninth Frame: <span id="frameNine"></h3>
+        <h3> Tenth Frame: <span id="frameTen"></h3>
+        <h3> Bonus Frame: <span id="bonusFrame"></h3>
+               
+        <br> 
         <h3> Add score</h3>
-        <h3> Current score <span id="scores"></h3>
-        <h3> Current frames <span id="frames"></h3>
         <form id="bowl" >
             <input type="number" id="scoreValue">
             <input type="submit" value="go">
@@ -24,9 +36,25 @@
                 $( "#bowl" ).submit(function (event) {  
                     event.preventDefault();
                     game.bowl($("#scoreValue").val())
+                    updateScore()
+               });
+
+                function updateScore() {
+                    game.sort();
                     $('#scores').text(game.scores);
                     $('#frames').text(game.frames);
-               });
+                    $('#frameOne').text(game.frameOne);
+                    $('#frameTwo').text(game.frameTwo);
+                    $('#frameThree').text(game.frameThree);
+                    $('#frameFour').text(game.frameFour);
+                    $('#frameFive').text(game.frameFive);
+                    $('#frameSix').text(game.frameSix);
+                    $('#frameSeven').text(game.frameSeven);
+                    $('#frameEight').text(game.frameEight);
+                    $('#frameNine').text(game.frameNine);
+                    $('#frameTen').text(game.frameTen);
+                    $('#bonusFrame').text(game.bonusFrame);
+               }
 
                
             

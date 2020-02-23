@@ -1,10 +1,10 @@
-function Game() {
-    
-    this.scores = []
-    this.frames = []
-    this.previousScore = undefined
-    
-}
+    function Game() {
+        
+        this.scores = []
+        this.frames = []
+        this.previousScore = undefined
+        
+    }
 
 Game.prototype.bowl = function(score) {
     
@@ -24,7 +24,33 @@ Game.prototype.endGame = function() {
         
 }
 
+Game.prototype.sort = function() {
+    this.frameOne = this.frames[0]
+    this.frameTwo = this.frames[1]
+    this.frameThree = this.frames[2]
+    this.frameFour = this.frames[3]
+    this.frameFive = this.frames[4]
+    this.frameSix = this.frames[5]
+    this.frameSeven = this.frames[6]
+    this.frameEight = this.frames[7]
+    this.frameNine = this.frames[8]
+    this.frameTen = this.frames[9]
+    this.bonusFrame = this.frames[10]
+}
 
+Game.prototype.gutterBall = function() {
+    this.score = this.scores.reduce(function(a, b){
+        return a + b;
+    }, 0);
+}
+
+Game.prototype.perfectGame = function() {
+    this.score = this.scores.reduce(function(a, b){
+        return a + b;
+    }, 0);
+}
+  
+    
 
 
 
