@@ -22,7 +22,8 @@ describe('game', function () {
         expect(game.frames).toEqual([[10]])
     })
 
-    it('ends the game', function() {
+
+    it('knows when the game is over', function() {
         game.bowl(10)
         game.bowl(10)
         game.bowl(10)
@@ -32,21 +33,24 @@ describe('game', function () {
         game.bowl(10)
         game.bowl(10)
         game.bowl(10)
-        game.bowl(9)
-        game.bowl(0)
-        expect(game.endGame()).toEqual(true)
+        game.bowl(10)
+        game.bowl(10)
+
+        
+      
+        expect(game.gameOver).toEqual(true)
     })
 
-    it('playes until the end', function() {
+    it('knows when the game is not over', function() {
         game.bowl(10)
         game.bowl(10)
         game.bowl(10)
         game.bowl(10)
         game.bowl(10)
-        game.bowl(10)
-        game.bowl(10)
+        
+        
       
-        expect(game.endGame()).toEqual(false)
+        expect(game.gameOver).toEqual(false)
     })
 
     it('updates each frame with scores', function() {
@@ -129,6 +133,6 @@ describe('game', function () {
         game.bowl(10)
         game.bowl(10)
         game.perfectGame()
-        expect(game.score).toEqual(120)
+        expect(game.score).toEqual(110)
     })
 });
