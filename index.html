@@ -26,7 +26,9 @@
         <form id="bowl" >
             <input type="number" id="scoreValue">
             <input type="submit" value="go">
-          </form>
+        </form>
+          <br>
+          <button onclick="myFunction()", id="change">Go to intro</button>
         <script src="jquery.js"></script>
         <script>
 
@@ -59,6 +61,11 @@
                
             
             });
+        </script>
+        <script>
+            function myFunction() {
+                location.replace("file:///Users/tobydawson/Projects/bowling-challenge/intro.html")
+    }
         </script>
 
 
