@@ -12,9 +12,9 @@ Game.prototype.bowl = function(score) {
     
     if(this.frames.length === 10) {
         this.gameOver = true
-        
+            return
     }else
-    this.scores.push(score);
+        this.scores.push(score);
         if(this.previousScore !== undefined) {
             this.frames.push([this.previousScore, score])
             this.previousScore = undefined 
@@ -60,9 +60,4 @@ Game.prototype.extraFrame = function() {
             
     })
 }
-  
-    
-
-
-
 

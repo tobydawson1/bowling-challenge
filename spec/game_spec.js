@@ -21,7 +21,7 @@ describe('game', function () {
         game.bowl(10)
         expect(game.frames).toEqual([[10]])
     })
-
+ 
 
     it('knows when the game is over', function() {
         game.bowl(10)
