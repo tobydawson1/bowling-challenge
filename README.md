@@ -3,13 +3,13 @@
 Bowling Challenge
 =================
 
-[Task](#Task) | [Installation](#Installation) | [Rules](#Bowling — how does it work?) | [Functionality](#Functionality) |
+[Task](#Task) | [Installation](#Installation) | [Rules](#Bowling — how does it work?) |
 
 Technologies: Javascript, Jasmine, HTML, CSS
 
 ![Bowling](screenshots/bowling.png)
 
-## The Task
+## Task
 
 **THIS IS NOT A BOWLING GAME, IT IS A BOWLING SCORECARD. DO NOT GENERATE RANDOM ROLLS. THE USER INPUTS THE ROLLS.**
 
@@ -34,13 +34,13 @@ $ cd Thermostat-js
 $ open SpecRunner.html
 ```
 
-3. Run the index file
+3. Run the intro file
 
 ```
-$ open index.html
+$ open intro.html
 ```
 
-## Bowling — how does it work?
+## Rules
 
 ### Strikes
 
