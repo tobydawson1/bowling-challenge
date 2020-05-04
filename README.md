@@ -40,7 +40,7 @@ $ open SpecRunner.html
 $ open intro.html
 ```
 
-## Bowling Rules
+## <a name="Bowling">Bowling — how does it work?</a>
 
 ### Strikes
 
