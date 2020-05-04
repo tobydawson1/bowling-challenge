@@ -3,7 +3,7 @@
 Bowling Challenge
 =================
 
-[Task](#Task) | [Installation](#Installation) | [Bowling — how does it work?](#Bowling) |
+[Task](#Task) | [Installation](#Installation) | [Bowling — how does it work?](#Bowling Rules) |
 
 Technologies: Javascript, Jasmine, HTML, CSS
 
@@ -40,7 +40,7 @@ $ open SpecRunner.html
 $ open intro.html
 ```
 
-## Bowling — how does it work?
+## Bowling Rules
 
 ### Strikes
 
