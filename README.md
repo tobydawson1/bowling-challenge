@@ -3,7 +3,7 @@
 Bowling Challenge
 =================
 
-[Task](#Task) | [Installation](#Installation) | [Rules](Bowling — how does it work?) | [Functionality](#Functionality) |
+[Task](#Task) | [Installation](#Installation) | [Rules](#Bowling — how does it work?) | [Functionality](#Functionality) |
 
 Technologies: Javascript, Jasmine, HTML, CSS
 
