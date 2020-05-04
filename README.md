@@ -3,9 +3,11 @@
 Bowling Challenge
 =================
 
-[Task](#Task) | [Installation](#Installation) | [Functionality](#Functionality) |
+[Task](#Task) | [Installation](#Installation) | [Rules](Bowling — how does it work?) | [Functionality](#Functionality) |
 
 Technologies: Javascript, Jasmine, HTML, CSS
+
+![Bowling](screenshots/bowling.png)
 
 ## The Task
 
@@ -16,6 +18,27 @@ Count and sum the scores of a bowling game for one player (in JavaScript).
 A bowling game consists of 10 frames in which the player tries to knock down the 10 pins. In every frame the player can roll one or two times. The actual number depends on strikes and spares. The score of a frame is the number of knocked down pins plus bonuses for strikes and spares. After every frame the 10 pins are reset.
 
 This challenge is the fifth afternoon pair programming challenge at Makers Academy
+
+# Installation
+
+1. Fork this repoistory and clone  it to your local machine then change into the directory
+
+```
+$ git clone git@github.com:tobydawson1/Thermostat-js
+$ cd Thermostat-js
+```
+
+2. Run the jasmine spech runner for tests and coverage
+
+```
+$ open SpecRunner.html
+```
+
+3. Run the index file
+
+```
+$ open index.html
+```
 
 ## Bowling — how does it work?
 
@@ -48,11 +71,4 @@ More about ten pin bowling here: http://en.wikipedia.org/wiki/Ten-pin_bowling
 
 ![Ten Pin Score Example](images/example_ten_pin_scoring.png)
 
-## Code Review
 
-In code review we'll be hoping to see:
-
-* All tests passing
-* The code is elegant: every class has a clear responsibility, methods are short etc.
-
-Reviewers will potentially be using this [code review rubric](docs/review.md).  Note that referring to this rubric in advance may make the challenge somewhat easier.  You should be the judge of how much challenge you want.
